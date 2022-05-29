@@ -1,6 +1,6 @@
 #Preprocessing corpus Lahiri_IT - including punctuation marks in MFW
 #Set wd to corpus folder
-setwd("/Users/palleb/Library/Mobile Documents/com~apple~CloudDocs/Thesis Bilingual Creativity/Jhumpa Lahiri/Italian_corpus/corpus")
+setwd("##YOURPATH##")
 
 #Standardizing miscallenous quotation marks to "
 filelist=list.files()
@@ -11,7 +11,7 @@ for(file in filelist){
 }
 
 #Putting space around all punctuation marks in order to include them in 
-# examined features (MFW):: tx2=gsub("(\\.+|[[:punct:]])", " \\1 ", tx)
+# examined features (MFW) in Stylo
 # but excluding apostrophes ' or ’) 
 filelist=list.files()
 for(file in filelist){
@@ -38,7 +38,7 @@ stylo(parsed.corpus=LahiriITcorp)
 #Same for English corpus
 #Preprocessing corpus Lahiri_IT - including punctuation marks in MFW
 #Set wd to corpus folder
-setwd("/Users/palleb/Library/Mobile Documents/com~apple~CloudDocs/Thesis Bilingual Creativity/Jhumpa Lahiri/English_corpus/corpus")
+setwd("##YOURPATH##")
 
 #Standardizing miscellaneous quotation marks to "
 filelist=list.files()
@@ -49,7 +49,7 @@ for(file in filelist){
 }
 
 #Putting space around all punctuation marks in order to include them in 
-# examined features (MFW):: tx2=gsub("(\\.+|[[:punct:]])", " \\1 ", tx)
+# examined features (MFW) in Stylo
 # but excluding apostrophes (' or ’)
 filelist=list.files()
 for(file in filelist){
